@@ -36,10 +36,7 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
-            android:id="@+id/bmidisplay"
-            android:text="55">
-
-        </TextView>
+            android:id="@+id/bmidisplay" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,9 +48,7 @@
             android:layout_below="@id/bmidisplay"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
-            android:id="@+id/genderdisplay">
-
-        </TextView>
+            android:id="@+id/genderdisplay" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,15 +61,12 @@
             android:layout_marginTop="15dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/genderdisplay"
-            android:textSize="25sp">
-
-        </TextView>
+            android:textSize="25sp" />
 
     </RelativeLayout>
 
 
-    <android.widget.Button
-
+    <Button
         android:id="@+id/recalculatebmi"
         android:layout_width="403dp"
         android:layout_height="60dp"
@@ -85,13 +77,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/buttonbackground"
         android:text="Recalculate Your BMI"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:textStyle="bold">
-
-    </android.widget.Button>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/showExerciseRecommendationButton"
@@ -105,11 +96,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/buttonbackground"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textAllCaps="true"
         android:onClick="showExerciseRecommendations" />
-
 
 </RelativeLayout>

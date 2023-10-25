@@ -33,6 +33,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/buttonbackground"
         android:text="Recalculate Your BMI"
         android:textColor="@color/white"

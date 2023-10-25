@@ -36,35 +36,19 @@ public class bmiactivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmiactivity);
 
-//        Objects.requireNonNull(getSupportActionBar()).hide();
-
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
         }
 
-//        getSupportActionBar().setElevation(0);
-//        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
-
         SpannableString spannableString = new SpannableString("Your Title");
         spannableString.setSpan(new ForegroundColorSpan(Color.WHITE), 0, spannableString.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
-
-//        // Create a SpannableString with a white title
-//        SpannableString spannableString = new SpannableString("Result");
-//        spannableString.setSpan(new ForegroundColorSpan(Color.WHITE), 0, spannableString.length(), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-//        assert actionBar != null;
-//        actionBar.setTitle(spannableString);
-//
-//        // Set the background color
-//        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#1E1D1D"));
-//        actionBar.setBackgroundDrawable(colorDrawable);
-
         intent=getIntent();
+        String gender = intent.getStringExtra("gender");
 
         bmidisplay=findViewById(R.id.bmidisplay);
         bmicategory = findViewById(R.id.bmicategory);
-        gender=findViewById(R.id.genderdisplay);
         background=findViewById(R.id.contentlayout);
         imageview=findViewById(R.id.imageview);
 
@@ -78,9 +62,14 @@ public class bmiactivity extends AppCompatActivity {
 
         intbmi=intweight/(intheight*intheight);
 
+        String formattedBMI = String.format("%.2f", intbmi);
+        bmidisplay.setText(formattedBMI);
 
-        bmi=Float.toString(intbmi);
+        TextView genderDisplay = findViewById(R.id.genderdisplay);
 
+        if (gender != null && !gender.isEmpty()) {
+            genderDisplay.setText(gender);
+        }
 
         if(intbmi<16)
         {
