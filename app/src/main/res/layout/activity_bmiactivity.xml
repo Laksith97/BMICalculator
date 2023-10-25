@@ -93,4 +93,23 @@
 
     </android.widget.Button>
 
+    <Button
+        android:id="@+id/showExerciseRecommendationButton"
+        android:text="Show Exercise Recommendations"
+        android:layout_below="@id/recalculatebmi"
+        android:layout_marginTop="16dp"
+        android:layout_width="403dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:onClick="showExerciseRecommendations" />
+
+
 </RelativeLayout>

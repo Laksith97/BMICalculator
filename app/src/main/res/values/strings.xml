@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">bmiCalculator</string>
     <string name="calculate_your_bmi">Calculate Your BMI</string>
+    <string name="severe_thinness_exercises">For severe thinness, focus on strength and muscle building exercises. Consult a fitness trainer for personalized workout routines.</string>
+    <string name="moderate_thinness_exercises">Include resistance training and cardio exercises in your routine. Start with light weights and gradually increase intensity.</string>
+    <string name="mild_thinness_exercises">Incorporate bodyweight exercises like push-ups, squats, and lunges. Also, include aerobic exercises to improve stamina.</string>
+    <string name="normal_exercises">Maintain a balanced exercise routine with a mix of cardio and strength training exercises. Focus on staying active and healthy.</string>
+    <string name="overweight_exercises">Emphasize cardio exercises like jogging, cycling, or swimming to burn calories. Include strength training to build muscle mass.</string>
+    <string name="obese_class_i_exercises">Combine high-intensity interval training (HIIT) with strength exercises. Include activities like running, jumping jacks, and weightlifting.</string>
+    <string name="obese_class_ii_exercises">Consult a fitness expert or a healthcare professional for personalized exercise programs. Focus on low-impact exercises to avoid strain on joints.</string>
 </resources>
