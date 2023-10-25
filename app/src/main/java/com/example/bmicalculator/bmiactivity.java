@@ -3,9 +3,7 @@ package com.example.bmicalculator;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -16,8 +14,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.Objects;
 
 public class bmiactivity extends AppCompatActivity {
 
@@ -138,6 +134,14 @@ public class bmiactivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+
         });
+    }
+
+    public void showExerciseRecommendations(View view) {
+        Intent intent = new Intent(bmiactivity.this, ExerciseRecommendationActivity.class);
+        intent.putExtra("bmiCategory", bmicategory.getText().toString());
+        startActivity(intent);
+        finish();
     }
 }

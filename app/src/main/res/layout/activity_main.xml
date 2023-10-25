@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1e1d1d"
+    android:background="?attr/colorControlNormal"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -27,7 +27,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_toStartOf="@id/centerverticalline"
-        android:background="@drawable/malefemalenotfocus"
+        android:background="@drawable/cardbackground"
         android:layout_above="@id/heightlayout"
         android:layout_marginBottom="35dp"
         android:layout_marginRight="20dp"
@@ -65,7 +65,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_toEndOf="@id/centerverticalline"
-        android:background="@drawable/malefemalenotfocus"
+        android:background="@drawable/cardbackground"
         android:layout_above="@id/heightlayout"
         android:layout_marginBottom="35dp"
         android:layout_marginRight="20dp"
