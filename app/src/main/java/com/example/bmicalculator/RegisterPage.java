@@ -73,7 +73,7 @@
 
                     if (dbHandler.addUser(fullName, email, password, confirmPassword)) {
                         Toast.makeText(RegisterPage.this, "Signup successful!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(RegisterPage.this, MainActivity.class);
+                        Intent intent = new Intent(RegisterPage.this, WelcomePage.class);
                         startActivity(intent);
                         finish(); // Close signup activity
                     } else {
