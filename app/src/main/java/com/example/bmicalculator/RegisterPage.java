@@ -12,7 +12,7 @@
 
     public class RegisterPage extends AppCompatActivity {
 
-        private EditText fullNameEditText, ageEditText, emailEditText, passwordEditText, confirmPasswordEditText;
+        private EditText fullNameEditText, emailEditText, passwordEditText, confirmPasswordEditText;
         private Button signupButton;
         private DBHandler dbHandler;
 
@@ -22,7 +22,6 @@
             setContentView(R.layout.activity_register_page);
 
             fullNameEditText = findViewById(R.id.fullname);
-            ageEditText = findViewById(R.id.age);
             emailEditText = findViewById(R.id.email);
             passwordEditText = findViewById(R.id.password);
             confirmPasswordEditText = findViewById(R.id.confirm_password);
@@ -34,7 +33,6 @@
                 @Override
                 public void onClick(View v) {
                     String fullName = fullNameEditText.getText().toString();
-                    int age = Integer.parseInt(ageEditText.getText().toString());
                     String email = emailEditText.getText().toString();
                     String password = passwordEditText.getText().toString();
                     String confirmPassword = confirmPasswordEditText.getText().toString();
@@ -73,7 +71,7 @@
                         return;
                     }
 
-                    if (dbHandler.addUser(fullName, age, email, password, confirmPassword)) {
+                    if (dbHandler.addUser(fullName, email, password, confirmPassword)) {
                         Toast.makeText(RegisterPage.this, "Signup successful!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RegisterPage.this, MainActivity.class);
                         startActivity(intent);
