@@ -92,7 +92,7 @@ public class bmiactivity extends AppCompatActivity {
         else if(intbmi<25 && intbmi>18.4 )
         {
             bmicategory.setText("Normal");
-            //background.setBackgroundColor(Color.YELLOW);
+            background.setBackgroundColor(Color.MAGENTA);
             imageview.setImageResource(R.drawable.ok);
         }
         else if(intbmi <29.4 && intbmi>25)
